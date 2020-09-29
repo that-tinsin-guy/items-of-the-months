@@ -3,7 +3,7 @@ layout: iotm
 
 iotm:
   name: Cargo Cultist Shorts
-  img: itemimages/Cultistshorts
+  img: itemimages/cultistshorts
   description: "Sing a song of sick pants, pockets full of heresy."
   type: pants
   power: 100
