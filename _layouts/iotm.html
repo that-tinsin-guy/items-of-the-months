@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{%include boot-header.html%}
+<h1 class="text-center">{{page.iotm.name}}</h1>
+<p class="text-center">{{ page.date | date_to_string }}</p>
+<br>
+
+<img src="/assets/images/{{page.iotm.img}}.gif" class="mx-auto d-block">
+<p class="text-center font-weight-bold">{{page.iotm.name}}</p>
+
+<p>{{page.iotm.description}}</p>
+
+<p>
+Type: <span class="font-weight-bold">{{page.iotm.type}}</span><br>
+{% if page.iotm.power != 0 %}
+Power: <span class="font-weight-bold">{{page.iotm.power}}</span><br>
+{% endif %}
+{{page.iotm.added-notes}}
+</p>
+
+<p class="text-center text-primary font-weight-bold">{{page.iotm.enchantment}}</p>
+
+<table class="table table-sm table-hover">
+<colgroup>
+<col class="text-center"/>
+<col class="text-center"/>
+<col class="text-center"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th class="text-center">Link</th>
+	<th class="text-center">Name</th>
+	<th class="text-center">Type</th>
+	<th class="text-center">Notes</th>
+</tr>
+</thead>
+
+<tbody>
+{% for thing in page.things %}
+<tr>
+	<td class="text-center"><a href=" https://kol.coldfront.net/thekolwiki/index.php/{{thing.name | replace: " ", "_"}}" data-toggle="tooltip" data-placement="left" data-html="true" class="btn btn-lg btn-outline-secondary" title="<img src='/assets/images/{{thing.img}}.gif' />">&nbsp;</a></td>
+	<td class="text-center">{{thing.name}}</a></td>
+	<td class="text-center">{{thing.type}}</td>
+	<td class="text-center">{{thing.notes}}</td>
+</tr>
+<tr>
+{% endfor %}
+</tr>
+</table>
