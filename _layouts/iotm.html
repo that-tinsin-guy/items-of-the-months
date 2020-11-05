@@ -6,7 +6,7 @@ layout: default
 <p class="text-center">{{ page.date | date_to_string }}</p>
 <br>
 
-<img src="https://s3.amazonaws.com/images.kingdomofloathing.com/{{page.iotm.img}}.gif" class="mx-auto d-block">
+<img src="https://s3.amazonaws.com/images.kingdomofloathing.com/{{page.iotm.img}}" class="mx-auto d-block">
 <p class="text-center font-weight-bold">{{page.iotm.name}}</p>
 
 <p>{{page.iotm.description}}</p>
@@ -41,9 +41,22 @@ Power: <span class="font-weight-bold">{{page.iotm.power}}</span><br>
 {% for thing in page.things %}
 <tr>
 	<td class="text-center">
-	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.name | replace: " ", "_"}}" data-toggle="tooltip" data-placement="left" data-html="true">  
-	<img class="img-fluid" src='https://s3.amazonaws.com/images.kingdomofloathing.com/{{thing.img}}.gif'/>
-	</a></td>
+	
+	{% if thing.nolink != 1 %}
+	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.name | replace: " ", "_" | cgi_escape}}" data-toggle="tooltip" 
+	data-placement="left" data-html="true">  
+	{% endif %}
+	
+	{% if thing.altlink == 1 %}
+	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.altlink-src | replace: " ", "_" | cgi_escape}}" data-toggle="tooltip" 
+	data-placement="left" data-html="true">  
+	{% endif %}
+	
+	<img class="img-fluid" src='https://s3.amazonaws.com/images.kingdomofloathing.com/{{thing.img}}'/>
+	{% if thing.nolink != 1 %}
+	</a>
+	{% endif %}
+	</td>
 	<td class="text-center">{{thing.name}}</a></td>
 	<td class="text-center">{{thing.type}}</td>
 	<td class="text-center">{{thing.notes}}</td>
