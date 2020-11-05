@@ -130,5 +130,5 @@ things:
   type: ...
   notes: to be continued
   img: itemimages/silenttreatment.gif
-
+  nolink: 1
 ---
