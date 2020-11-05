@@ -124,11 +124,10 @@ things:
   notes: Weapon Damage +200%
   img: itemimages/teeth.gif
 
-
-
 - name: ...
   type: ...
   notes: to be continued
   img: itemimages/silenttreatment.gif
   nolink: 1
+  
 ---
