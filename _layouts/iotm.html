@@ -43,21 +43,21 @@ Power: <span class="font-weight-bold">{{page.iotm.power}}</span><br>
 	<td class="text-center">
 	
 	{% if thing.nolink != 1 %}
-	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.name | replace: " ", "_" | cgi_escape}}" data-toggle="tooltip" 
-	data-placement="left" data-html="true">  
-	{% endif %}
 	
 	{% if thing.altlink == 1 %}
-	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.altlink-src | replace: " ", "_" | cgi_escape}}" data-toggle="tooltip" 
-	data-placement="left" data-html="true">  
+	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.altlink-src | replace: " ", "_" | cgi_escape}}">  
+	
+	{% else %}
+	<a href="https://kol.coldfront.net/thekolwiki/index.php/{{thing.name | replace: " ", "_" | cgi_escape}}">
+	
 	{% endif %}
 	
+	
 	<img class="img-fluid" src='https://s3.amazonaws.com/images.kingdomofloathing.com/{{thing.img}}'/>
-	{% if thing.nolink != 1 %}
 	</a>
 	{% endif %}
 	</td>
-	<td class="text-center">{{thing.name}}</a></td>
+	<td class="text-center">{{thing.name}}</td>
 	<td class="text-center">{{thing.type}}</td>
 	<td class="text-center">{{thing.notes}}</td>
 </tr>
