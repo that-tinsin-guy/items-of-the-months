@@ -117,7 +117,7 @@ things:
   num: 7347
 - name: Slay the Dead
   type: combat skill
-  notes: Instantly defeat an undead enemy.<br>(Only with Vampire Slicer/"Kill Me")
+  notes: With sword in mainhand, instantly defeat an undead enemy<br>Also reduces Evil by 1%<br>(Only with Vampire Slicer/"Kill Me")<br>
   img: itemimages/hkatana.gif
   num: 7348
 
