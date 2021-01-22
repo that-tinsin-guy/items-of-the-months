@@ -17,6 +17,12 @@ iotm:
   
 things:
 
+- name: box o' ghosts
+  type: wrapper
+  notes: Contains gregarious ghostling, grinning ghostling, and greedy ghostling.
+  img: itemimages/cghostbox.gif
+  num: 10648
+
 # hatchlings
 - name: gregarious ghostling
   type: familiar hatchling
@@ -42,7 +48,8 @@ things:
   notes: |
    Increases item drops from monsters<br>
    Casts buffs on you during combat<br>
-   Shares XP with the other Crimbo Ghosts
+   Shares XP with the other Crimbo Ghosts<br>
+   Cannot carry equipment
   img: itemimages/cghost_carols.gif
   num: 280
 
@@ -51,12 +58,22 @@ things:
   notes: |
    Gives you more stats after combat<br>
    Makes it snow in zones you visit<br>
-   Shares XP with the other Crimbo Ghosts
+   Shares XP with the other Crimbo Ghosts<br>
+   Cannot carry equipment
   img: itemimages/cghost_cheer.gif
   num: 281
+
+- name: Ghost of Crimbo Commerce
+  type: familiar
+  notes: |
+   Causes enemies to drop more Meat<br>
+   Occasionally compels you to buy stuff<br>
+   Shares XP with the other Crimbo Ghosts<br>
+   Cannot carry equipment
+  img: itemimages/cghost_commerce.gif
+  num: 282
+
 # carol buffs
-
-
 
 - name: ...
   type: ...
@@ -65,5 +82,5 @@ things:
   nolink: 1
   
   
-published: false
+published: debug
 ---
