@@ -1,5 +1,4 @@
 title: Items of the Months
-email: incoherental@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
   A custom listing of items from items in Kingdom of Loathing.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -11,6 +10,8 @@ github_username:  that-tinsin-guy
 theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:title.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.

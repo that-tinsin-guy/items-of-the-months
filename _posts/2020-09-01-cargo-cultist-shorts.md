@@ -1,6 +1,7 @@
 ---
 layout: iotm
 
+release: September 2020
 iotm:
   name: Cargo Cultist Shorts
   img: itemimages/cultistshorts.gif
@@ -124,10 +125,14 @@ things:
   notes: Weapon Damage +200%
   img: itemimages/teeth.gif
 
+
+
 - name: ...
   type: ...
   notes: to be continued
   img: itemimages/silenttreatment.gif
   nolink: 1
   
+  
+published: false
 ---

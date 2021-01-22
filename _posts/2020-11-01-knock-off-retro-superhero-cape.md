@@ -1,6 +1,7 @@
 ---
 layout: iotm
 
+release: November 2020
 iotm:
   name: unwrapped knock-off retro superhero cape
   img: itemimages/retrocape1.gif
@@ -117,7 +118,7 @@ things:
   num: 7347
 - name: Slay the Dead
   type: combat skill
-  notes: With sword in mainhand, instantly defeat an undead enemy<br>Also reduces Evil by 1%<br>(Only with Vampire Slicer/"Kill Me")<br>
+  notes: With sword in mainhand, instantly defeat an undead enemy<br>Also reduces Evil in the Cyrpt by 1%<br>(Only with Vampire Slicer/"Kill Me")<br>
   img: itemimages/hkatana.gif
   num: 7348
 
@@ -142,4 +143,6 @@ things:
   notes: Briefly stun your foe and shoot them for a guaranteed critical hit<br>(only with Robot Police/"Kill Me")
   img: itemimages/nopic.gif
   num: 7356
+  
+published: true
 ---
